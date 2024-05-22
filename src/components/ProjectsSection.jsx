@@ -3,61 +3,125 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+import Link from "next/link";
 
 const projectsData = [
   {
-    id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/public/images/projects/Website-design1.jpg",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "3D Figma to Next JS Conversion",
+    description:
+      "A 3d alike figma design has been converted to next js tailwind css and with beautiful animation",
+    image: "/images/Website-design1.jpg",
+    tag: ["All", "Web Design"],
+    gitUrl: "https://github.com/sonaly-mehr/project_metaverse",
+    previewUrl: "https://metaverse-landing-page-project.netlify.app/",
   },
   {
-    id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Modern payment method landing page",
+    description:
+      "Converted from figma to react js and tailwind css with various animations and effect that make the landing page stand out!",
+    image: "/images/Website-design2.jpg",
+    tag: ["All", "Web Design"],
+    gitUrl: "https://github.com/sonaly-mehr/bank-landing-page",
+    previewUrl: "https://payment-bank-landing-page.netlify.app/",
   },
   {
-    id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
+    title: "Brainwave - AI Landing page",
+    description:
+      "Converted from figma to next js and tailwind css with various animations that make the landing page stand out!",
+    image: "/images/website-design8.jpg",
+    tag: ["All", "Web Design"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://brainwave-ecru.vercel.app/",
   },
   {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Restaurant Website",
+    description:
+      "Converted this stunning figma to Html, CSS, BootStrap and JavaScipt conversion on this project with 100% customer satisfaction",
+    image: "/images/website-design10.jpg",
+    tag: ["All", "Web Design"],
+    gitUrl: "https://github.com/sonaly-mehr/Food-Landing-Page",
+    previewUrl: "https://food-landing-page-0a.netlify.app/",
   },
   {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "RUTEDI",
+    description:
+      "Converted this stunning figma to react js conversion on this project with 100% customer satisfaction",
+    image: "/images/website-design9.jpg",
+    tag: ["All", "Web Design"],
+    gitUrl: "https://github.com/sonaly-mehr/rutedi",
+    previewUrl:
+      "https://cool-beijinho-fd7901.netlify.app/#services%20https://glittering-speculoos-248bd3.netlify.app/",
   },
   {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Costnip Landing page",
+    description:
+      "converted that beautiful landing page from figma design to next js and tailwind css for Costnip. Which is 100% responsive across all devices. They loved the work how it turned out!",
+    image: "/images/Website-design3.jpg",
+    tag: ["All", "Web Design"],
+    gitUrl: "https://github.com/sonaly-mehr/costnip",
+    previewUrl: "https://costnip-landing-page.netlify.app/",
+  },
+  {
+    title: "NEFA- Crypto web app landing page",
+    description:
+      "Converted from figma to next js and tailwind css with various animations that make the landing page stand out!",
+    image: "/images/website-design7.jpg",
+    tag: ["All", "Web Design"],
+    gitUrl: "https://github.com/sonaly-mehr/nefa",
+    previewUrl: "https://nefa.netlify.app/",
+  },
+  {
+    title: "Molaraki Pizaa - Landing Page",
+    description:
+      "Converted that from figma to next js and tailwind css for Molaraki pizza. This is one of my favourite work for the variations it has in terms of designs and animations.",
+    image: "/images/Website-design4.jpg",
+    tag: ["All", "Web Design"],
+    gitUrl: "https://github.com/sonaly-mehr/molaraki-pizza",
+    previewUrl: "https://molaraki-pizza.netlify.app/",
+  },
+  {
+    title: "Bizness Website",
+    description: "Bizness Website",
+    image: "/images/Website-design5.jpg",
+    tag: ["All", "Web Design"],
+    gitUrl: "https://github.com/sonaly-mehr/business-landing-page",
+    previewUrl: "https://bizness-website.netlify.app",
+  },
+  {
+    title: "Bootstrap Token",
+    description:
+      "Designed it for Bootstrap Token, simple yet elegant landing page. And they really loved the outcome!",
+    image: "/images/Website-design6.jpg",
+    tag: ["All", "Web Design"],
+    gitUrl: "https://github.com/sonaly-mehr/bootstrap-token",
+    previewUrl: "https://bootstrap-token.netlify.app/",
+  },
+  {
+    title: "Restaurant Landing Page",
+    description:
+      "Converted this stunning figma to React, CSS, BootStrap conversion.",
+    image: "/images/Website-design11.jpg",
+    tag: ["All", "Web Design"],
+    gitUrl: "https://github.com/sonaly-mehr/react-restaurant",
+    previewUrl: "https://coruscating-fairy-bec2c9.netlify.app/",
+  },
+  {
+    title: "Doctors Portal Website",
+    description:
+      "Modern medical portal site wher pateint can book appointment to their needs. Consists Admin, Doctor & Pateient Dashboard",
+    image: "/images/doctors-portal.jpg",
+    tag: ["All", "Web Development"],
+    gitUrl: "https://github.com/sonaly-mehr/ecommerce-frontend",
+    previewUrl: "https://doctors-portal-rust-five.vercel.app/",
+  },
+  {
+    title: "University Management System",
+    description:
+      "A industry standard application University Management System. Having Four separate dashboard for Admin, Super Admin, Student and Faculty. Consist all the core functionaly of a university portal",
+    image: "/images/website-development.jpg",
+    tag: ["All", "Web Development"],
+    gitUrl: "https://github.com/sonaly-mehr/uni-management-system-frontend",
+    previewUrl: "https://uni-management-system-frontend.vercel.app/",
   },
 ];
 
@@ -65,6 +129,7 @@ const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const [itemsToShow, setItemsToShow] = useState(6);
 
   const handleTagChange = (newTag) => {
     setTag(newTag);
@@ -77,6 +142,10 @@ const ProjectsSection = () => {
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
+  };
+
+  const showMore = () => {
+    setItemsToShow(filteredProjects.length);
   };
 
   return (
@@ -92,17 +161,17 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Web Design"
+          isSelected={tag === "Web Design"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Web Development"
+          isSelected={tag === "Web Development"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project, index) => (
+        {filteredProjects.slice(0, itemsToShow).map((project, index) => (
           <motion.li
             key={index}
             variants={cardVariants}
@@ -121,6 +190,20 @@ const ProjectsSection = () => {
           </motion.li>
         ))}
       </ul>
+      <div
+        className="w-full flex justify-center  mb-28"
+      >
+        {itemsToShow === 6 && (
+          <div
+            onClick={showMore}
+            className="cursor-pointer px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white"
+          >
+            <span className="flex justify-end bg-[#121212] hover:bg-slate-800 rounded-full px-10 py-2">
+              See More
+            </span>
+          </div>
+        )}
+      </div>
     </section>
   );
 };

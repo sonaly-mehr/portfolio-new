@@ -20,6 +20,9 @@ const TAB_DATA = [
           Tailwind CSS <progress value={95} max={100} />
         </li>
         <li>
+          BootStrap <progress value={95} max={100} />
+        </li>
+        <li>
           Express <progress value={90} max={100} />
         </li>
         <li>
@@ -48,6 +51,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
+        <li>Next Level Web development</li>
         <li>Complete Web Development Course With Jhankar Mahbub</li>
         <li>Professional Wordpress Development: Learn Web Design & Developemt from Scratch</li>
       </ul>
