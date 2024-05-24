@@ -123,6 +123,15 @@ const projectsData = [
     gitUrl: "https://github.com/sonaly-mehr/uni-management-system-frontend",
     previewUrl: "https://uni-management-system-frontend.vercel.app/",
   },
+  {
+    title: "Vouge Ecommerce Admin Dashboard",
+    description:
+      "An e-commerece admin dashboard where admin is in charge of monitoring the sales growth, users, orders, shipment, products and so on",
+    image: "/images/web-development-3.jpg",
+    tag: ["All", "Web Development"],
+    gitUrl: "https://github.com/sonaly-mehr/vouge-admin-dashboard",
+    previewUrl: "https://vouge-admin-dashboard.vercel.app/",
+  },
 ];
 
 const ProjectsSection = () => {
