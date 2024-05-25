@@ -124,6 +124,15 @@ const projectsData = [
     previewUrl: "https://uni-management-system-frontend.vercel.app/",
   },
   {
+    title: "Vouge Ecommerce Store",
+    description:
+      " An E-commerce website where any user can view product, search or filter product, review product, buy products and make purchase for the product, and for that the user needs to log in first if not already. On their dashboard user is able to edit their profile and password, display their purchase history etc.",
+    image: "/images/web-development-3.jpg",
+    tag: ["All", "Web Development"],
+    gitUrl: "https://github.com/sonaly-mehr/vouge-ecommerce-store",
+    previewUrl: "https:/vouge-ecommerce-store.vercel.app/",
+  },
+  {
     title: "Vouge Ecommerce Admin Dashboard",
     description:
       "An e-commerece admin dashboard where admin is in charge of monitoring the sales growth, users, orders, shipment, products and so on",
@@ -199,9 +208,7 @@ const ProjectsSection = () => {
           </motion.li>
         ))}
       </ul>
-      <div
-        className="w-full flex justify-center  mb-28"
-      >
+      <div className="w-full flex justify-center  mb-28">
         {itemsToShow === 6 && (
           <div
             onClick={showMore}
