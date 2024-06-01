@@ -130,13 +130,13 @@ const projectsData = [
     image: "/images/web-development-3.jpg",
     tag: ["All", "Web Development"],
     gitUrl: "https://github.com/sonaly-mehr/vouge-ecommerce-store",
-    previewUrl: "https:/vouge-ecommerce-store.vercel.app/",
+    previewUrl: "https://vouge-ecommerce-store.vercel.app/",
   },
   {
     title: "Vouge Ecommerce Admin Dashboard",
     description:
       "An e-commerece admin dashboard where admin is in charge of monitoring the sales growth, users, orders, shipment, products and so on",
-    image: "/images/web-development-3.jpg",
+    image: "/images/web-development4.jpg",
     tag: ["All", "Web Development"],
     gitUrl: "https://github.com/sonaly-mehr/vouge-admin-dashboard",
     previewUrl: "https://vouge-admin-dashboard.vercel.app/",
