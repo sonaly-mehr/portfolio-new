@@ -106,6 +106,15 @@ const projectsData = [
     previewUrl: "https://coruscating-fairy-bec2c9.netlify.app/",
   },
   {
+    title: "Vacation Rentals- Airbnb Clone",
+    description:
+      "The Airbnb website Clone. Where user can book vacation rentals, cabins, beach houses and more. User is able to search and filter based on location, guests and checkout dates. Can book reservation, checkout etc. ",
+    image: "/images/website-developemt-6.png",
+    tag: ["All", "Web Development"],
+    gitUrl: "https://github.com/sonaly-mehr/airbnb-clone",
+    previewUrl: "https://airbnb-travelling.vercel.app/",
+  },
+  {
     title: "Doctors Portal Website",
     description:
       "Modern medical portal site wher pateint can book appointment to their needs. Consists Admin, Doctor & Pateient Dashboard",
