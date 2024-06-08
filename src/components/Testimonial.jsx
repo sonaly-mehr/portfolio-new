@@ -19,12 +19,14 @@ import Link from "next/link";
 
 const Testimonial = () => {
   const settings = {
+    dots: true,
     autoplay: true,
+    autoplaySpeed:5000,
     infinite: true,
     speed: 2000,
     slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
+    slidesToScroll: 2,
+    arrows: false,
 
     responsive: [
       {
@@ -192,18 +194,18 @@ const Testimonial = () => {
   };
   return (
     <div
-      className="mt-16 mb-0 lg:mt-24 lg:mb-24 lg:bg-[#242424] lg:px-10 text-center"
+      className="mt-16 mb-0 lg:mt-24 lg:mb-24 px-2 lg:px-10 text-center"
       id="testimonials"
     >
       <h2 className="text-left text-4xl font-bold text-white pt-14 pb-10">
-        Testimonials(Fiverr Reviews)
+        Testimonials
       </h2>
 
       <Slider {...settings}>
         {tesmonials.map((testimonial, index) => (
           <div
             key={index}
-            className="pt-7 pb-8 mb-10 h-[430px] bg-gradient-to-br from-primary-500 to-secondary-500 px-4 rounded-lg relative overflow-auto z-50 text-white"
+            className="pt-7 pb-8 mb-5 lg:mb-8 h-[430px] bg-gradient-to-br from-primary-500 to-secondary-500 px-4 rounded-lg relative overflow-auto z-50 text-white"
           >
             <div className="flex justify-center">
               <Image
@@ -236,9 +238,9 @@ const Testimonial = () => {
       <Link
         href="https://www.fiverr.com/sonaly_mehr/develop-react-responsive-website-c843"
         target="_blank"
-        className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mb-14"
+        className="cursor-pointer mt-16  lg:mt-24 px-1 inline-block py-1 sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white"
       >
-        <span className="flex justify-end bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+        <span className="flex bg-[#121212] hover:bg-slate-800 rounded-full px-10 py-2">
           See More
         </span>
       </Link>
