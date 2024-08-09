@@ -118,7 +118,7 @@ const projectsData = [
     title: "Digital Marketplace- DigitalUI",
     description:
       "A Digital Marketplace using Next.js 14, Stripe Connect, Kinde, Prisma, Supabase, and Tailwind CSS with full functionalities of seller and buyers purchasing and selling product Online!",
-    image: "/images/web-development.jpg",
+    image: "/images/website-development.jpg",
     tag: ["All", "Web Development"],
     gitUrl: "/",
     previewUrl: "https://digital-marketplace-dm.vercel.app/",
@@ -137,7 +137,7 @@ const projectsData = [
     title: "Vouge Ecommerce Store",
     description:
       " An E-commerce website where any user can view product, search or filter product, review product, buy products and make purchase for the product, and for that the user needs to log in first if not already. On their dashboard user is able to edit their profile and password, display their purchase history etc.",
-    image: "/images/web-development-3.jpg",
+    image: "/images/web-development4.jpg",
     tag: ["All", "Web Development"],
     gitUrl: "https://github.com/sonaly-mehr/vouge-ecommerce-store",
     previewUrl: "https://vouge-ecommerce-store.vercel.app/",
@@ -146,7 +146,7 @@ const projectsData = [
     title: "University Management System",
     description:
       "A industry standard application University Management System. Having Four separate dashboard for Admin, Super Admin, Student and Faculty. Consist all the core functionaly of a university portal",
-    image: "/images/website-development7.jpg",
+    image: "/images/website-development9.jpg",
     tag: ["All", "Web Development"],
     gitUrl: "https://github.com/sonaly-mehr/uni-management-system-frontend",
     previewUrl: "https://uni-management-system-frontend.vercel.app/",
@@ -155,7 +155,7 @@ const projectsData = [
     title: "Vouge Ecommerce Admin Dashboard",
     description:
       "An e-commerece admin dashboard where admin is in charge of monitoring the sales growth, users, orders, shipment, products and so on",
-    image: "/images/web-development4.jpg",
+    image: "/images/web-development-3.jpg",
     tag: ["All", "Web Development"],
     gitUrl: "https://github.com/sonaly-mehr/vouge-admin-dashboard",
     previewUrl: "https://vouge-admin-dashboard.vercel.app/",

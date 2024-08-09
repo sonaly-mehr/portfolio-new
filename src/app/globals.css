@@ -24,6 +24,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    overflow-x: hidden;
 }
 html{
   scroll-behavior: smooth;
@@ -70,4 +71,10 @@ progress[value]::-moz-progress-bar {
 }
 .slick-dots li button::before {
   @apply !opacity-100 !text-[#959595] text-[8px] lg:!text-[10px]
+}
+
+@media screen and (max-width: 600px) {
+  progress[value] {
+    width: 170px;
+  }
 }

@@ -25,7 +25,7 @@ const Testimonial = () => {
     infinite: true,
     speed: 2000,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     arrows: false,
 
     responsive: [
