@@ -19,7 +19,7 @@ import Link from "next/link";
 
 const Testimonial = () => {
   const settings = {
-    dots: true,
+    // dots: true,
     autoplay: true,
     autoplaySpeed:5000,
     infinite: true,
@@ -238,7 +238,7 @@ const Testimonial = () => {
       <Link
         href="https://www.fiverr.com/sonaly_mehr/develop-react-responsive-website-c843"
         target="_blank"
-        className="cursor-pointer mt-16  lg:mt-24 px-1 inline-block py-1 sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white"
+        className="cursor-pointer mt-1  lg:mt-4 px-1 inline-block py-1 sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white"
       >
         <span className="flex bg-[#121212] hover:bg-slate-800 rounded-full px-10 py-2">
           See More

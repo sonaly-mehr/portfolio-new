@@ -19,7 +19,7 @@ const projectsData = [
     title: "Modern payment method landing page",
     description:
       "Converted from figma to react js and tailwind css with various animations and effect that make the landing page stand out!",
-    image: "/images/Website-design2.jpg",
+    image: "/images/website-design2.jpg",
     tag: ["All", "Web Design"],
     gitUrl: "https://github.com/sonaly-mehr/bank-landing-page",
     previewUrl: "https://payment-bank-landing-page.netlify.app/",
@@ -56,7 +56,7 @@ const projectsData = [
     title: "Costnip Landing page",
     description:
       "converted that beautiful landing page from figma design to next js and tailwind css for Costnip. Which is 100% responsive across all devices. They loved the work how it turned out!",
-    image: "/images/Website-design3.jpg",
+    image: "/images/website-design3.jpg",
     tag: ["All", "Web Design"],
     gitUrl: "https://github.com/sonaly-mehr/costnip",
     previewUrl: "https://costnip-landing-page.netlify.app/",
@@ -74,7 +74,7 @@ const projectsData = [
     title: "Molaraki Pizaa - Landing Page",
     description:
       "Converted that from figma to next js and tailwind css for Molaraki pizza. This is one of my favourite work for the variations it has in terms of designs and animations.",
-    image: "/images/Website-design4.jpg",
+    image: "/images/website-design4.jpg",
     tag: ["All", "Web Design"],
     gitUrl: "https://github.com/sonaly-mehr/molaraki-pizza",
     previewUrl: "https://molaraki-pizza.netlify.app/",
@@ -82,7 +82,7 @@ const projectsData = [
   {
     title: "Bizness Website",
     description: "Bizness Website",
-    image: "/images/Website-design5.jpg",
+    image: "/images/website-design5.jpg",
     tag: ["All", "Web Design"],
     gitUrl: "https://github.com/sonaly-mehr/business-landing-page",
     previewUrl: "https://bizness-website.netlify.app",
@@ -100,7 +100,7 @@ const projectsData = [
     title: "Restaurant Landing Page",
     description:
       "Converted this stunning figma to React, CSS, BootStrap conversion.",
-    image: "/images/Website-design11.jpg",
+    image: "/images/website-design11.jpg",
     tag: ["All", "Web Design"],
     gitUrl: "https://github.com/sonaly-mehr/react-restaurant",
     previewUrl: "https://coruscating-fairy-bec2c9.netlify.app/",
@@ -125,13 +125,13 @@ const projectsData = [
   },
   
   {
-    title: "Doctors Portal Website",
+    title: "Healthcare Management System",
     description:
-      "Modern medical portal site wher pateint can book appointment to their needs. Consists Admin, Doctor & Pateient Dashboard",
-    image: "/images/doctors-portal.jpg",
+      "Modern medical portal site wher pateint can book appointment to their needs, on a doctor's available schedule. Consists Admin, Super admin, Doctor & Pateient Dashboard",
+    image: "/images/healthcare.png",
     tag: ["All", "Web Development"],
-    gitUrl: "https://github.com/sonaly-mehr/ecommerce-frontend",
-    previewUrl: "https://doctors-portal-rust-five.vercel.app/",
+    gitUrl: "/",
+    previewUrl: "https://healthcare-frontend-gold.vercel.app/",
   },
   {
     title: "Vouge Ecommerce Store",
