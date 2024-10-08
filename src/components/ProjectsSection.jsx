@@ -134,6 +134,15 @@ const projectsData = [
     previewUrl: "https://healthcare-frontend-gold.vercel.app/",
   },
   {
+    title: "University Management System",
+    description:
+      "A industry standard application University Management System. Having Four separate dashboard for Admin, Super Admin, Student and Faculty. Consist all the core functionaly of a university portal",
+    image: "/images/website-development9.jpg",
+    tag: ["All", "Web Development"],
+    gitUrl: "https://github.com/sonaly-mehr/uni-management-system-frontend",
+    previewUrl: "https://university-management-frontend-gilt.vercel.app",
+  },
+  {
     title: "Vouge Ecommerce Store",
     description:
       " An E-commerce website where any user can view product, search or filter product, review product, buy products and make purchase for the product, and for that the user needs to log in first if not already. On their dashboard user is able to edit their profile and password, display their purchase history etc.",
@@ -141,15 +150,6 @@ const projectsData = [
     tag: ["All", "Web Development"],
     gitUrl: "https://github.com/sonaly-mehr/vouge-ecommerce-store",
     previewUrl: "https://vouge-ecommerce-store.vercel.app/",
-  },
-  {
-    title: "University Management System",
-    description:
-      "A industry standard application University Management System. Having Four separate dashboard for Admin, Super Admin, Student and Faculty. Consist all the core functionaly of a university portal",
-    image: "/images/website-development9.jpg",
-    tag: ["All", "Web Development"],
-    gitUrl: "https://github.com/sonaly-mehr/uni-management-system-frontend",
-    previewUrl: "https://uni-management-system-frontend.vercel.app/",
   },
   {
     title: "Vouge Ecommerce Admin Dashboard",
