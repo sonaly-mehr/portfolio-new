@@ -1,34 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const MAX_LENGTH = 100; // Limit for the description preview
+
+  // Toggle Read More
+  const toggleReadMore = () => setIsExpanded(!isExpanded);
+
   return (
-    <div>
+    <div className="bg-[#1E1E1E] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
       <div
-        className="h-[20rem] md:h-[26rem] rounded-t-xl relative group bg-contain"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "contain", backgroundPosition: "center",  backgroundRepeat: "no-repeat" }}
+        className="h-[20rem] md:h-[26rem] relative group bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${imgUrl})`,
+        }}
       >
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
-          <Link
-            target="_blank"
-            href={gitUrl}
-            className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
-          >
-            <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
-          </Link>
+        <div className="absolute inset-0 flex items-center justify-center bg-[#181818] bg-opacity-0 group-hover:bg-opacity-80 transition duration-500">
           <Link
             target="_blank"
             href={previewUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+            className="h-14 w-14 flex items-center justify-center border-2 border-[#ADB7BE] rounded-full hover:border-white transition-colors"
           >
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
+            <EyeIcon className="h-10 w-10 text-[#ADB7BE] hover:text-white transition-colors" />
           </Link>
         </div>
       </div>
-      <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
+      <div className="p-4 text-white bg-[#282828]">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
+        <p className="text-[#ADB7BE]">
+          {isExpanded ? description : `${description.slice(0, MAX_LENGTH)}...`}
+          {description.length > MAX_LENGTH && (
+            <button
+              onClick={toggleReadMore}
+              className="text-primary-500 hover:underline ml-1 text-[15px]"
+            >
+              {isExpanded ? "Show Less" : "Read More"}
+            </button>
+          )}
+        </p>
       </div>
     </div>
   );

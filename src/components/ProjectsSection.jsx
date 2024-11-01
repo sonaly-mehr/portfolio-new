@@ -34,13 +34,31 @@ const projectsData = [
     previewUrl: "https://brainwave-ecru.vercel.app/",
   },
   {
+    title: "Digital Marketplace- DigitalUI",
+    description:
+      "A Digital Marketplace using Next.js 14, Stripe Connect, Kinde, Prisma, Supabase, and Tailwind CSS with full functionalities of seller and buyers purchasing and selling product Online!",
+    image: "/images/website-development.jpg",
+    tag: ["All", "Web Development"],
+    gitUrl: "/",
+    previewUrl: "https://digital-marketplace-dm.vercel.app/",
+  },
+  {
     title: "Restaurant Website",
     description:
       "Converted this stunning figma to Html, CSS, BootStrap and JavaScipt conversion on this project with 100% customer satisfaction",
     image: "/images/website-design10.jpg",
     tag: ["All", "Web Design"],
-    gitUrl: "https://github.com/sonaly-mehr/Food-Landing-Page",
+    gitUrl: "/",
     previewUrl: "https://food-landing-page-0a.netlify.app/",
+  },
+  {
+    title: "Travel Agency Service",
+    description:
+      "TravelSync is a modern travel agency platform designed to help users discover, plan, and book their ideal vacations with ease. The app offers a curated selection of group trips, personalized destination recommendations, and user-friendly booking options. With seamless navigation, inspiring visuals, and detailed vacation packages",
+    image: "/images/website-development10.png",
+    tag: ["All", "Web Development"],
+    gitUrl: "/",
+    previewUrl: "https://travel-agency-service.vercel.app/",
   },
   {
     title: "RUTEDI",
@@ -113,15 +131,6 @@ const projectsData = [
     tag: ["All", "Web Development"],
     gitUrl: "https://github.com/sonaly-mehr/airbnb-clone",
     previewUrl: "https://airbnb-travelling.vercel.app/",
-  },
-  {
-    title: "Digital Marketplace- DigitalUI",
-    description:
-      "A Digital Marketplace using Next.js 14, Stripe Connect, Kinde, Prisma, Supabase, and Tailwind CSS with full functionalities of seller and buyers purchasing and selling product Online!",
-    image: "/images/website-development.jpg",
-    tag: ["All", "Web Development"],
-    gitUrl: "/",
-    previewUrl: "https://digital-marketplace-dm.vercel.app/",
   },
   
   {
@@ -221,7 +230,7 @@ const ProjectsSection = () => {
               title={project.title}
               description={project.description}
               imgUrl={project.image}
-              gitUrl={project.gitUrl}
+              // gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
             />
           </motion.li>
